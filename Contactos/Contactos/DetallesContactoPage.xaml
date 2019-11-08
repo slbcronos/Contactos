@@ -6,8 +6,25 @@
              mc:Ignorable="d"
              x:Class="Contactos.DetallesContactoPage">
 
-    <Grid >
-        
+    <Grid Margin="10,20,10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+
+        <Label x:Name="LabelNombre" Text="Nombre Apellido" Grid.Column="1"/>
+
+        <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
+            <Label x:Name="LabelCorreoE" Text="Correo@Ejemplo.com"/>
+            <Label x:Name="LabelTelefono" Text="4431645422"/>
+        </StackLayout>
+
     </Grid>
 
 </ContentPage>
