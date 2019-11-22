@@ -7,18 +7,12 @@
              x:Class="Contactos.MainPage">
 
 
- 
-
-
-    <StackLayout>
-        <Label Text="Nuevo Contacto" FontSize="Large" TextColor="Red"   HorizontalOptions="Center"  ></Label>
-       
-        <Entry x:Name="EntryNombre" Placeholder="Nombre"></Entry>
-        <Entry x:Name="EntryApellido" Placeholder="Apellido"></Entry>
-        <Entry x:Name="EntryEmail" Placeholder="Email" Keyboard="Email"></Entry>
-        <Entry x:Name="EntryTelefono" Placeholder="Telefono" Keyboard="Telephone"></Entry>
-
-
-    </StackLayout>
+    <ListView x:Name="contactosListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="" Detail=""/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 
 </ContentPage>
